@@ -1,0 +1,22 @@
+{% extends "AppCoder/padre.html" %}
+
+{% load static %}
+
+{% block titulo %}
+<h1 class="mb-5">FORMULARIO DE ENTREGABLES</h1>
+{% endblock %}
+
+{% block contenido_que_cambia %}
+
+<h3>{{ mensaje }}</h3>
+
+<form action="{% url 'buscarEntregbale' %}" method="GET"> 
+
+    <input type="text" name="nombre" id="nombre" placeholder="INSERTE ENTREGABLE">
+
+    <input type="submit" value="buscar entregable">
+
+
+</form>
+
+{% endblock %}
